@@ -1,0 +1,233 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color:  #d9fae0;
+    margin: 0px;
+}
+
+header {
+    background-color: #32323a;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: x-large;
+    
+}
+
+footer {
+    text-align: center;
+    clear: both;
+    padding: 20px 0px;
+    background-color: #32323a;
+    color: white;
+    margin-top: 20px;
+    min-width: 1200px;
+}
+/* 'position: sticky' allows for navbar to 'stick' on top upon scrolling. z-index specifies the stack order of an element*/
+nav {
+    position: sticky;
+    top: 0; 
+    box-shadow: 4px 4px 6px -1px grey;  
+    z-index: 1;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #32323a;   
+    padding-left: 14%;
+
+}
+
+nav li {
+    float: left;
+    width: 13.8888%;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav li a:hover:not(.active) {
+    color:#55746f;
+}
+
+nav .active {
+    background-color: #55746f;
+}
+
+.right-nav {
+    float: right;
+}
+.content {
+    margin-left: 14%;
+    margin-right: 14.33%;
+    margin-bottom: -20px;
+    min-height: 100vh;
+    color: black;
+    padding: 20px 50px;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+#wrapper {
+    margin: auto;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 100vh;
+}
+/* for the name overlay for signature drinks (status page) */
+.signature-drinks-overlay{
+    margin-bottom: -30px;
+    z-index: 0; 
+}
+.signature-drinks-overlay .overlay-text {
+    position:relative;
+    bottom: 130px;
+    width: 50%;
+    padding: 5px;
+    margin-left: 21.5%;
+    text-align: center;
+    visibility:hidden;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    opacity: 0.8;
+    
+    }
+    
+.signature-drinks-overlay:hover .overlay-text {
+    visibility:visible;
+}
+.order-table h2{
+    text-align: center;
+}
+.order-table p{
+    text-align: center;
+}
+.order-table td{
+    text-align: center;
+    min-width: 150px;
+}
+.order-table table{
+    margin: auto;
+    width: 100%;
+}
+.order-table-description{
+    text-align: justify;
+    padding: 0px 30px;
+}
+/*here*/
+.cart-table h2{
+    text-align: center;
+}
+.cart-table p{
+    text-align: center;
+}
+.cart-table td, .cart-table th{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+   
+}
+.cart-table table{
+    margin: auto;
+    width: 80%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+/* for equal height columns (for left/right columns with signature drinks (with name overlay)) */
+.col-container {
+    display: table;
+    width: 100%;
+}
+.col-left {
+    display: table-cell;
+    width: 90%;
+}
+.col-right {
+    display: table-cell;
+    text-align: center;
+}
+.col-right a{
+    text-decoration: none;
+    color: black;
+}
+
+.diy-table {
+    max-width: 450px;
+    border: 0;
+}
+.diy-table td,th{
+    padding: 10px;
+}
+
+.diy-table td{
+    text-align: left;
+}
+
+.rel-position {
+    position: relative;
+    top: -250px;
+}
+
+.bar-design {
+    background-color: #72a2a2;
+    color: white;
+    font-weight: bold;
+    padding: 12px 50px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 16px;
+}
+.bar-design:hover{
+    background-color: #55746f;
+}
+.bar-design-2 {
+    background-color: #A9A9A9;
+    color: white;
+    font-weight: bold;
+    padding: 12px 50px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 16px;
+}
+.bar-design-2:hover{
+    background-color: #808080;
+}
+.add-button-design{
+    background-color: #72a2a2;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.col-container-admin {
+    display: table;
+    width: 100%;
+}
+.col-left-admin {
+    display: table-cell;
+    width: 50%;
+    padding-left: 10%;
+    
+}
+.col-right-admin {
+    display: table-cell;
+    width: 50%;
+    padding-left: 10%;
+    
+}
